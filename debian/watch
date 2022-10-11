@@ -1,0 +1,3 @@
+version=4
+opts="uversionmangle=s/\.\d{2}$/$&0/" \
+https://metacpan.org/release/Test-Output   .*/Test-Output-v?@ANY_VERSION@@ARCHIVE_EXT@$

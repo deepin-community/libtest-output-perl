@@ -1,0 +1,33 @@
+Source: libtest-output-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: gregor herrmann <gregoa@debian.org>,
+           Florian Schlichting <fsfs@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+Build-Depends-Indep: libcapture-tiny-perl <!nocheck>,
+                     libsub-exporter-perl <!nocheck>,
+                     libtest-pod-coverage-perl <!nocheck>,
+                     libtest-pod-perl <!nocheck>,
+                     libtest-simple-perl (>= 1.001010) <!nocheck>,
+                     perl
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libtest-output-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libtest-output-perl.git
+Homepage: https://metacpan.org/release/Test-Output
+Rules-Requires-Root: no
+
+Package: libtest-output-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libcapture-tiny-perl,
+         libsub-exporter-perl
+Description: perl module to test stdout and stderr messages
+ Test::Output provides a simple interface for testing output sent to STDOUT
+ or STDERR. A number of different utilities are included to try and be as
+ flexible as possible to the tester.
+ .
+ Test::Output ties STDOUT and STDERR using Test::Output::Tie, also provided
+ by this package.

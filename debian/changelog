@@ -1,0 +1,163 @@
+libtest-output-perl (1.033-1) unstable; urgency=medium
+
+  * Team upload
+  * Import upstream version 1.033 (Closes: #982485)
+  * Add debian/gbp.conf
+
+ -- Yadd <yadd@debian.org>  Thu, 11 Feb 2021 16:12:49 +0100
+
+libtest-output-perl (1.032-1) unstable; urgency=medium
+
+  [ Damyan Ivanov ]
+  * declare conformance with Policy 4.1.3 (no changes needed)
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * debian/*: update GitHub URLs to use HTTPS.
+  * debian/watch: use uscan version 4.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+  [ gregor herrmann ]
+  * Import upstream version 1.032.
+  * Update years of upstream and packaging copyright, and
+    upstream license terms.
+  * Update (build) dependencies.
+  * Declare compliance with Debian Policy 4.5.1.
+  * Set Rules-Requires-Root: no.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * Bump debhelper-compat to 13.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 31 Jan 2021 20:19:54 +0100
+
+libtest-output-perl (1.031-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Update Test::Tester build dependency.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * debian/upstream/metadata: use HTTPS for GitHub URLs.
+  * Remove Antonio Radici from Uploaders. Thanks for your work!
+  * Remove Ryan Niebur from Uploaders. Thanks for your work!
+
+  * Import upstream version 1.031.
+  * debian/watch: add uversionmangle in case upstream goes back to 2-digit
+    minor versions.
+  * Update debian/upstream/metadata.
+  * Update years of packaging copyright.
+  * Update (build) dependencies.
+  * Declare compliance with Debian Policy 4.0.0.
+  * Bump debhelper compatibility level to 9.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 03 Aug 2017 21:22:44 -0400
+
+libtest-output-perl (1.03-1) unstable; urgency=medium
+
+  [ Florian Schlichting ]
+  * Import Upstream version 1.03
+  * Add upstream-repo URL to Source field
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * Add debian/upstream/metadata.
+  * Mark package as autopkgtest-able.
+  * Declare compliance with Debian Policy 3.9.6.
+
+ -- gregor herrmann <gregoa@debian.org>  Wed, 01 Oct 2014 20:14:06 +0200
+
+libtest-output-perl (1.02-1) unstable; urgency=low
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Florian Schlichting ]
+  * Imported Upstream version 1.02.
+  * Bump years of upstream copyright.
+  * Add new (build-)dependency on libcapture-tiny-perl.
+  * Bump Standards-Version to 3.9.4 (update to copyright-format 1.0).
+  * Drop spelling.patch, applied upstream.
+  * Add myself to uploaders and copyright.
+
+ -- Florian Schlichting <fsfs@debian.org>  Sat, 10 Aug 2013 20:47:23 +0200
+
+libtest-output-perl (1.01-1) unstable; urgency=low
+
+  [ Nathan Handler ]
+  * debian/watch: Update to ignore development releases.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Changed: Replace versioned (build-)dependency on
+    perl (>= 5.6.0-{12,16}) with an unversioned dependency on perl (as
+    permitted by Debian Policy 3.8.3).
+
+  [ Ryan Niebur ]
+  * Email change: Ryan Niebur -> ryan@debian.org
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * Switch to source format 3.0 (quilt).
+  * Minimize debian/rules.
+  * debian/copyright: update Maintainer, formatting, and pointers to
+    common-licenses.
+  * Bump debhelper compatibility level to 8.
+  * Add /me to Uploaders.
+  * Set Standards-Version to 3.9.2 (no further changes).
+  * Add a patch to fix a spelling mistake.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 25 Apr 2011 19:25:10 +0200
+
+libtest-output-perl (0.16-1) unstable; urgency=low
+
+  [ Ryan Niebur ]
+  * New upstream release
+
+  [ gregor herrmann ]
+  * debian/control: add back reference to Test::Output::Tie to long
+    description, since the module is resurrected.
+
+ -- Ryan Niebur <ryanryan52@gmail.com>  Fri, 15 May 2009 18:22:59 -0700
+
+libtest-output-perl (0.15-1) unstable; urgency=low
+
+  [ Ryan Niebur ]
+  * New upstream release
+  * update copyright
+  * add myself to uploaders
+  * remove quilt stuff, patch applied upstream
+    + remove README.source containing only quilt hints
+  * Debian Policy 3.8.1
+
+  [ gregor herrmann ]
+  * debian/control: add missing full stop to long description, thanks to
+    Rhonda for spotting.
+  * debian/control: remove reference to Test::Output::Tie from long
+    description, this module is removed, and Test::Output now uses seekable
+    temp files.
+
+ -- Ryan Niebur <ryanryan52@gmail.com>  Tue, 12 May 2009 21:32:07 -0700
+
+libtest-output-perl (0.12-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #518587)
+
+ -- Antonio Radici <antonio@dyne.org>  Sat, 7 Mar 2009 11:12:35 +0000
